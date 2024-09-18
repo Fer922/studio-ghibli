@@ -1,0 +1,79 @@
+@charset "UTF-8";
+/* CSS Document */
+
+*{margin: 0; padding: 0; }
+
+body {background-image: url("../IMG/fondo3.jpg"); background-repeat: no-repeat; background-size: cover; background-attachment: fixed; font-family: Averia Serif Libre ; cursor:url("../IMG/cursor.png"),auto; }
+
+.wrapper {background-color: rgba(126,156,182,0.79); width: 1000px; height: auto; margin-left: auto; margin-right: auto; text-align: center; padding: 30px; box-sizing:border-box; }
+
+.footer {background-color: cadetblue;width: 1000px; height: 60px; color: whitesmoke; line-height: 60px; margin-left: auto; margin-right: auto; text-align: center; }
+
+.nav {background-color: cadetblue; width: 1000px; height: 170px; color: whitesmoke; text-align: center; margin-left: auto; margin-right: auto; }
+
+.nav ul{list-style-type: none; }
+
+.nav li{width: 200px; float: left;}
+
+.secciones {background-color:floralwhite; width: 700px; padding: 60px; margin-top: 50px; margin-bottom: 50px; margin-left: auto; margin-right: auto; }
+
+.secciones img {height: 300px; width: auto;}
+
+.secciones p {text-align: justify;}
+
+h1 {color: hotpink; font-family: choco; }
+
+
+@font-face {src:url("../SRC/Choco Shake.otf"); font-family: choco; }
+
+/*font face permite colocar fuentes de fantasia desacargadas, el font familia es para agragarle un nombre y despues utilizarla en la pagina*/
+
+a {text-decoration: none; color:white; }
+a:hover {color: hotpink; font-size: 20px;}
+
+.homeboton {position:fixed; right:60px ; top: 200px; }
+
+/* La fija: sale del flujo de la pagina, se posiciona a partir de la ventana y nunca se mueve, La absoluta: es igual solo que cuando scroleas se va, La relativa mantiene el flujo de la fagina y a partir de ahi se va a posicion o mover;por default */
+
+.uno {position:absolute; left: 170px; bottom: 80px; }
+
+/*transformciones*/
+
+.uno:hover {transform: translate(100px, 50px);  transition: ease-in 4s;  }
+
+/* la transcision linear no tiene flexibilidad, es constante, ease-in nos dice que inicia la transformacion lentamente y termina a toda velocidad, ease-out: inicia la transformacion a toda velocidad y termina lentamente   ease-in-out empieza rapido y termina lento,   las transformaciones de rotate y skew se manejan en grados (deg), mientras en la tranformacion de translate en px*/
+
+.dos {position: absolute; right: 120px; top: 615px; }
+
+.dos:hover {transform: translate(100px,50px); transition: ease-in-out 3s;}
+
+
+.tres {position: absolute; left: 120px; top: 1100px; }
+
+.tres:hover {transform: rotateY(360deg); transition: ease-in 3s; }
+
+.cuatro { position:absolute; right: 60px; top: 1590px;}
+
+.cuatro:hover {transform: translate(-100px, 80px); transition: ease-out 4s; }
+
+.cinco {position: absolute; left: 60px; top: 1939px;}
+
+.cinco:hover {transform: skewX(360deg); transition: ease-in-out 5s; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
